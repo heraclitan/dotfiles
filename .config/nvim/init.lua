@@ -1,3 +1,4 @@
+-- ~/.config/nvim/init.lua
 -- Main entry point for Neovim configuration
 
 -- Load core settings
