@@ -37,7 +37,6 @@ opt.tabstop = 2                     -- Number of spaces a tab counts for
 opt.softtabstop = 2                 -- Number of spaces a tab counts for in edit ops
 opt.shiftwidth = 2                  -- Number of spaces for indentation
 opt.smartindent = true              -- Insert indents automatically
-opt.wrap = false                    -- Don't wrap lines
 
 -- Behavior
 opt.mouse = "a"                     -- Enable mouse in all modes
@@ -45,9 +44,11 @@ opt.clipboard = "unnamedplus"       -- Use system clipboard
 opt.updatetime = 250                -- Faster update time
 opt.timeoutlen = 300                -- Time to wait for mapped sequence
 opt.hidden = true                   -- Allow hidden buffers
+opt.wrap = true                     -- Wrap lines
+opt.linebreak = true                -- Don't break words when wrapping
 opt.completeopt = {                 -- Better completion experience
   "menu",
-  "menuone", 
+  "menuone",
   "noselect"
 }
 
