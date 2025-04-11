@@ -1,6 +1,9 @@
 # ~/.config/zsh/.zshrc
 
 # Add ~/.local/bin to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Setup completion system
 autoload -Uz compinit
 compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 zstyle ':completion:*' menu select
