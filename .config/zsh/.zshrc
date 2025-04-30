@@ -3,6 +3,11 @@
 # Add ~/.local/bin to PATH
 export PATH="$HOME/.local/bin:$PATH"
 
+# Automatically start tmux on shell login
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
+
 # Setup completion system
 autoload -Uz compinit
 compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
