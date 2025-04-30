@@ -3,9 +3,9 @@
 # Add ~/.local/bin to PATH
 export PATH="$HOME/.local/bin:$PATH"
 
-# Automatically start tmux on shell login
+# Automatically start tmux with random session name
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
+    tmux new -s "session_$(date +%s%N | md5sum | head -c 8)"
 fi
 
 # Setup completion system
