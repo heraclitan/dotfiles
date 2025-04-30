@@ -9,7 +9,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
 # Shell configuration
-export ZDOTDIR="$XDG_CONFIG_DIR/zsh"
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$XDG_STATE_HOME/history"
 export HISTSIZE=100
 
