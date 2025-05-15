@@ -53,3 +53,20 @@ map({"o", "x"}, "ac", "@class.outer", { desc = "Select outer class" })
 map({"o", "x"}, "ic", "@class.inner", { desc = "Select inner class" })
 map({"o", "x"}, "aa", "@parameter.outer", { desc = "Select outer parameter/argument" })
 map({"o", "x"}, "ia", "@parameter.inner", { desc = "Select inner parameter/argument" })
+
+--[[ File explorer mappings ]]--
+
+-- Toggle file explorer
+map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+
+-- Focus file explorer (open and focus if closed)
+map("n", "<leader>fe", "<cmd>NvimTreeFocus<CR>", { desc = "Focus file explorer" })
+
+-- Find file in tree (reveal current file)
+map("n", "<leader>ff", "<cmd>NvimTreeFindFile<CR>", { desc = "Find current file in explorer" })
+
+-- Collapse all directories in tree
+map("n", "<leader>fc", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" })
+
+-- Refresh the file explorer
+map("n", "<leader>fr", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
